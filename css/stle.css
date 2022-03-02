@@ -11,7 +11,8 @@ html, body {
 
 header {
   background: #47a0ce;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 nav {
@@ -32,7 +33,7 @@ main {
 #logo-container {
   display: inline-block;
   padding-top: 10px;
-  background: #47a0ce;
+  background: #47a0ce;   
   position: relative;
   top: 20px;
   padding: 10px;
@@ -43,12 +44,30 @@ main {
 }
 
 .bg-dark {
-  background: black;
+  
   color: #47a0ce;
 }
 
 .bg-dark a {
   color: #47a0ce;
+}
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+  margin: 2px;
+  width: 240px;
+  height: 240px;
 }
 
 #hero {
